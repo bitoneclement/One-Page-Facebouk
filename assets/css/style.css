@@ -1,0 +1,241 @@
+/*font-family: 'Glegoo', serif;*/
+
+*{margin: 0; padding: 0} /*reset css*/
+
+header{ width: 100vw;
+        height: 46px;
+        position: fixed;
+        z-index: 1;
+        background: rgb(0,113,188)
+        /*overflow:hidden*/
+}
+div.container{ width: 1200px;
+max-width: 1200px;
+min-width: 980px;
+padding-left: 181px}
+
+.position{ margin-right: 242px;
+float: left}
+
+.slide{width: 100vw;
+        height: 100vh;
+background: rgb(0,113,188)}
+
+.animate{padding-top: 195px;
+        margin: auto;
+    width: 300px;
+    height: 400px
+}
+
+
+article.visu{
+    background: url(../images/people.png) 0 0 no-repeat fixed;
+width: auto;
+height: 100vh;
+max-height: 100%;
+max-width: 100%;
+background-size: cover;
+    padding-top: 244px
+}
+
+h1, h2, h3{ font-size: 53px;
+            color: snow;
+            text-align: center;
+            font-family: 'Glegoo', serif;}
+
+hr{border: 3px solid rgb(0,113,188);
+width: 46px;
+margin: auto}
+
+
+nav{ width: 600px;
+height: 46px;
+float: left}
+
+nav ul{list-style: none}
+
+nav ul li{display: block;
+            float: left;
+            height: 46px;
+            line-height: 46px;
+            text-align: center;
+            width: 120px}
+
+nav a{font-family: 'Glegoo', serif;
+        color: snow;
+        text-decoration: none;
+        font-size: 18px}
+
+nav a:hover{ color: lightgray;
+border-bottom: 3px solid lightgray;
+transition: 1s;
+}
+
+/*  margin: 0px 0px 0px 0px; margin: haut droite bas gauche*/
+
+p.people, p.people2{font-family: 'Glegoo', serif;
+        color: white;
+        text-align: center;
+        padding-top: 60px}
+
+section.eco{background: black;
+width: 100vw;
+height: 100vh;
+padding-top: 50px}
+
+
+article.vu{ width: 1080px;
+
+            height: auto;
+            margin: auto;
+          }
+
+
+figure.mission{height: 390px;
+                width: 160px;
+                float: left;
+                margin: 60px 200px 0px 0px;
+                padding-left: 50px;
+                box-sizing: border-box}
+
+
+p.zone{font-family: 'Glegoo', serif;
+        color: white;
+    font-size: 14px;
+    width: 160px
+  }
+
+article.visu2{
+    background: url(../images/equipe.jpg) 0 0 no-repeat fixed;
+    width: auto;
+    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    padding-top: 50px
+    
+}
+
+div.contain3{width: 1000px;
+height: auto;
+margin: 200px auto}
+
+div.conso{width: 480px;
+height: 250px;
+background: rgba(255,255,255,.8);
+border-radius: 10px;
+float: left;
+overflow: auto;
+color:gray;
+text-align: center;
+font-family: 'Glegoo', serif;
+padding: 15px;
+box-sizing: border-box;}
+
+#space{margin-right: 40px}
+
+
+div.prevu{display: inline-block;
+            width: 196px;
+             height: 210px;
+        position: relative;
+background: grey;
+transform: scale(1);
+-ms-transform: scale(1);
+-webkit-transform: scale(1);
+-o-transform: scale(1);
+-moz-transform: scale(1);
+
+transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in; 
+    -webkit-transition: all 200ms ease-in; 
+    -o-transition: all 200ms ease-in; 
+    -moz-transition: all 200ms ease-in; 
+    filter: grayscale(1)
+    
+}
+
+div.prevu:hover{
+     filter: grayscale(0);
+    box-shadow: 0px 0px 150px black;
+    background: red;
+    z-index: 2;
+    
+    transform: scale(1.5);
+-ms-transform: scale(1.5);
+-webkit-transform: scale(1.5);
+-o-transform: scale(1.5);
+-moz-transform: scale(1.5);
+
+transition: all 200ms ease-in;
+    -ms-transition: all 200ms ease-in; 
+    -webkit-transition: all 200ms ease-in; 
+    -o-transition: all 200ms ease-in; 
+    -moz-transition: all 200ms ease-in; 
+}
+div.niv{width: 600px;
+margin: auto}
+
+
+
+/*le popup*/
+.dialogue {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 2;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+
+.dialogue:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.dialogue > div {
+	width: 400px;
+	position: relative;
+	margin: 50px auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: rgb(0,113,188);
+	
+}
+
+        
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: red; }
+
+.book{ display: inline-block;
+            width: 196px;
+             height: 210px;
+    background: grey;
+}
